@@ -14,12 +14,12 @@ See the component README files for full details and commands:
 
 Use the instructions below as a short path to get both parts running locally.
 
-1) Backend (Data Agent)
+1) Copilot_backend (Data Agent)
 
    - Change to the backend folder and install dependencies in your Python environment:
 
      ```powershell
-     cd data_agent
+     cd copilot_backend
      python -m venv .venv
      .\.venv\Scripts\Activate.ps1   # or `conda activate <env>` if using conda
      pip install --upgrade pip
