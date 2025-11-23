@@ -2,8 +2,8 @@
 
 This repository contains two main components for the Vanna / Data Agent project:
 
-- `data_agent` — the Python backend (Data Agent, training utilities, and ADK middleware).
-- `copilot_frontend` — the Next.js frontend (copilot UI that connects to the backend).
+- `copilot_backend` — the Python backend (Data Agent, training utilities, and ADK middleware). Go to repo here: https://github.com/hengamirah/copilot_backend
+- `copilot_frontend` — the Next.js frontend (copilot UI that connects to the backend). Go to repo here: https://github.com/hengamirah/copilot_frontend
 
 See the component README files for full details and commands:
 
