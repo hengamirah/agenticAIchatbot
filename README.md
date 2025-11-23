@@ -47,6 +47,11 @@ Use the instructions below as a short path to get both parts running locally.
      # or run the FastAPI ADK endpoint directly
      python -m src.backend.ag_ui.main
      ```
+    ![ADK session screenshot](adk_web_demo.png)
+    *Agent session showing tool calls and state (left panel).*
+
+    ![Query result in Postgres](adk_web_demo2.png)
+    *Query result shown in pgAdmin — confirms numeric result returned by the agent.*
 
 2) Frontend (Copilot UI)
 
@@ -61,6 +66,11 @@ Use the instructions below as a short path to get both parts running locally.
 
    - Open `http://localhost:3000` to view the UI. Configure the UI to point to the backend ADK endpoint at `http://localhost:8000/api/agent` if needed.
 
+    ![Front end session screenshot](front_end_web_demo1.png)
+
+    ![Graph Visualisation screenshot](front_end_web_demo2.png)
+    
+
 ## Where to look for details
 
 - Backend docs and env/example: `data_agent/READMe` and `data_agent/src/core/.env.development`.
@@ -71,4 +81,3 @@ Use the instructions below as a short path to get both parts running locally.
 - If ADK fails to import the agent, ensure you run `adk web` from the repo root (so `data_agent` package is reachable) and that `python-dotenv` is installed in the same environment as `adk`.
 - If you encounter database errors on import, either set valid DB env variables or temporarily disable the DB connection in `src/core/dependencies.py` while debugging.
 
-If you'd like, I can also add a small script to launch backend + frontend together, or create an `.env.example` in the repo root.
